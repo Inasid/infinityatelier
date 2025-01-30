@@ -18,17 +18,19 @@
 
 <div class="container">
     <div class="column1">
-        <p>Column 1</p>
+       
+        <img src="Images/s.png" alt="Brand Logo" class="brand-logo">
+            
     </div>
     <div class="column2"> 
-        <p>Column 1</p>
+        <p>Interiors</p>
 
         <div class="dropdown">
-        <button class="button">Click Me</button>
+        <button class="button"> &#9632;</button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Blog</a>
           </div>
     </div>
     </div>
@@ -38,11 +40,11 @@
     <div class="extra-column1">
 
         <div class="rows" style="background-color:#DAB487;">
-            <p>Column 1</p>
+            <p>Space design</p>
           
           </div>
           <div class="rows" style="background-color:#E7E2DC;">
-            <p>Column 2</p>
+            <p>Architecture</p>
            
           </div>
 
@@ -80,4 +82,112 @@
 
 </div>
 
+
+
+<div class="grid-container1">
+
+    <div class="image-section">
+        <img src="Images/Image1.jpg" alt="Home Image">
+      </div>
+
+    <div class="text-grid">
+        <div class="grid-item">
+          
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+         
+        </div>
+        <div class="grid-item">
+        
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+          
+        </div>
+        <div class="grid-item">
+        
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo </h3>
+          
+        </div>
+      </div>
+    
+    
+      
+    
+    </div>
+
+
+    <div class="grid-container1">
+
+
+
+        <div class="text-grid">
+            <div class="grid-item">
+              
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+             
+            </div>
+            <div class="grid-item">
+            
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+              
+            </div>
+            <div class="grid-item">
+            
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo </h3>
+              
+            </div>
+          </div>
+        
+        
+          <div class="image-section">
+            <img src="Images/Image1.jpg" alt="Home Image">
+          </div>
+        
+        </div>
+
+        
+        <div class="footer-container">
+            <div class="footer-item">Column 1
+                <img src="Images/de1.gif" alt="Overlay Image" class="grid-image">
+
+            </div>
+            <div class="footer-item"> the studio specializes in transitional design, blending diverse styles and eras to create timeless,<br> harmonious spaces. Its design philosophy revolves around merging the classic with the contemporary,<br>bringing together eclectic elements to reflect both history and modernity.
+
+
+            </div>
+        </div>
+        <div class="single-column">
+            Infinity Atelier
+Based in Kolkata, India
+
+Contact Information:<br>
+Phone: [Insert phone number]<br>
+Email: [Insert email address]<br>
+Website: [Insert website URL]<br>
+Social Media: [Insert social media handles, if any]
+            <button class="footerbutton" id="expandButton"> + </button>
+        </div>
+
+
+        <script>
+
+
+function toggleGridContent(element) {
+            element.classList.toggle("active");
+
+            if (element.classList.contains("active")) {
+                element.innerHTML = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus.</p>";
+            } else {
+                element.innerHTML = element.getAttribute("data-default");
+            }
+        }
+
+            const button = document.getElementById("expandButton");
+    
+            button.addEventListener("click", function() {
+                this.classList.toggle("active");
+                this.textContent = this.classList.contains("active") ? "For inquiries or consultations, please reach out via email or call to schedule a meeting." : "";
+            });
+        </script>
+
 </body>
+
+</html>
