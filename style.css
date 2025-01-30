@@ -129,4 +129,55 @@ body {
     font-weight: 200;
     font-size: 14pt;
     padding-left: 5%;
+    text-align: left;
   }
+
+
+  /* part2 with text and images */
+
+
+.grid-container1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+ gap: 10px;
+ width: 100%;
+}
+
+
+  .text-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 20px; /* Add space between columns */
+    padding: 2%;
+    outline-color: #587C62;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    
+    
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .image-section {
+    flex: 1;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: 5px;
+    
+  }
+  
+  .grid-item h3 {
+    font-weight: 200;
+    font-size: 8pt;
+    
+    text-align: left;
+  }
+  
